@@ -40,8 +40,12 @@ To evaluate the performace of the blocking methods three performace metric has b
 - Pairs completeness (PC): Pairs completeness defined as PC = SM⁄NM, 
 
   where SM is the number of true match record pairs in the set of record pairs produced for comparison by the blocking method and NM is the total number of true match record pairs in the entire data.
+  
+- Pair quality (PQ): Pair quality defined as PQ = SM ⁄ S, where SM is the number of true match record pairs in the set of record pairs produced for comparison by the blocking method and where S is the number of record pairs produced by a blocking method for comparison.
 
 # Results
+In this project two blocking methods (token blocking and attribute clustering blocking) is implemented for entity resolution. Also, this project has discussed how the blocking methods can be optimized via meta-blocking schemes, which restructure the block collection to improve efficiency while trying to keep effectiveness intact. 
+After analyzing all the results it is evident that meta-blocking improve efficiency and  not reduce effectiveness at all. This is due to the simplicity of the  entity collection, as they are not very heterogenous. With other datasets it could be possible that the pruning steps in the various meta-blocking schemes lose some legitimate matches.
 
 # Reference:
 1. Papadakis, Ekaterini Ioannou, Themis Palpanas, Claudia Niederee, and Wolfgang Nejdl, ‘A Blocking Framework for Entity Resolution in Highly Heterogeneous Information Spaces George’ [http://l3s.de/~papadakis/erData/BlockingFrameworkCameraReady.pdf]
